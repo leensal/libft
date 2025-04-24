@@ -6,7 +6,7 @@
 /*   By: lsahloul <lsahloul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 18:01:43 by lsahloul          #+#    #+#             */
-/*   Updated: 2025/01/13 16:49:34 by lsahloul         ###   ########.fr       */
+/*   Updated: 2025/04/24 20:45:28 by lsahloul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ size_t	ft_wordcount(char const *s, char c)
 	listsize = 0;
 	while (s[i] != '\0')
 	{
-		if ((i == 0 && s[i] != c) || \
-		(s[i] == c && s[i + 1] != '\0' && s[i + 1] != c))
+		if ((i == 0 && s[i] != c)
+			|| (s[i] == c && s[i + 1] != '\0' && s[i + 1] != c))
 			listsize++;
 		i++;
 	}
